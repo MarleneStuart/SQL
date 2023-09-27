@@ -1,0 +1,14 @@
+SELECT item_name, price
+FROM superstore
+GROUP BY price;
+
+SELECT MIN(price),item_name
+FROM superstore
+
+SELECT MIN(stock_quantity), item_name, category
+FROM superstore
+WHERE category='Kitchen Supplies'
+
+SELECT MAX(stock_quantity), item_name
+FROM superstore
+WHERE item_name='Memory Foam Mattress'
